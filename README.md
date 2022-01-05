@@ -12,13 +12,13 @@ A CLI tool to generate Duo 2FA passcode.
 
 First time:
 
-Get QR URL first. Add a new device for Duo, choose Android - Tablet, when the QR code show up, right click it and copy the image URL.
+Get QR URL first. Add a new device for Duo, choose `Add a new device` - `Tablet` - `Android` - `I have Duo Mobile installed`, when the QR code show up, right click it and copy the image URL, then run the following cmd, you will get a 6 digit passcode.
 
 ```bash
 python3 duo.py -qr <Duo QR URL>
 ```
 
-After:
+After the first time:
 
 ```
 python3 duo.py
