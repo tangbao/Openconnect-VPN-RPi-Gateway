@@ -1,5 +1,9 @@
 # Openconnect-VPN-RPi-Gateway
 
+See the [blog](https://blog.tangbao.me/2022/01/vpn-gateway/) (Chinese) for how to build an Openconnect VPN Gateway for all the other devices in the same network. Via this gateway you can easily connect to the sources behind the VPN. VPN is managed by the RPi and will be always connected.
+
+English version will be available soon (if I have time..)
+
 ## duo.py
 
 A CLI tool to generate Duo 2FA passcode.
