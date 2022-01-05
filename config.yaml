@@ -1,0 +1,20 @@
+# clash config file
+# see https://github.com/Dreamacro/clash/wiki/configuration for more
+
+# HTTP(S) and SOCKS4(A)/SOCKS5 server on the same port
+mixed-port: 7890
+
+# Set to true to allow connections to the local-end server from
+# other LAN IP addresses
+allow-lan: true
+
+# authentication of local SOCKS5/HTTP(S) server
+# authentication:
+#  - "user1:pass1"
+#  - "user2:pass2"
+
+# This is only applicable when `allow-lan` is `true`
+# '*': bind all IP addresses
+# 192.168.122.11: bind a single IPv4 address
+# "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
+bind-address: '*'

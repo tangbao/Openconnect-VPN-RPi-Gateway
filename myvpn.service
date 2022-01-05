@@ -1,0 +1,11 @@
+[Unit]
+Description=Manage Openconnect VPN Connection. Follow the university policy and use at your own risk.
+Documentation=https://github.com/tangbao/Openconnect-VPN-RPi-Gateway
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+User=root
+ExecStart=/bin/sh -c 'challange=$(python3 <WorkDir>/duo.py) && { printf \'<NetID password>\n\'; sleep 1; printf "$challange\n"; } | sudo openconnect <VPN URL> --user=<NetID>'
+Restart=always
