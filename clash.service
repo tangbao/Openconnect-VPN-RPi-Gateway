@@ -9,3 +9,4 @@ ExecStart=/usr/local/bin/clash -d /etc/clash
 
 [Install]
 WantedBy=multi-user.target
+

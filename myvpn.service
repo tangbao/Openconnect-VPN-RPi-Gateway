@@ -9,3 +9,4 @@ WantedBy=multi-user.target
 User=root
 ExecStart=/bin/sh -c 'challange=$(python3 <WorkDir>/duo.py) && { printf \'<NetID password>\n\'; sleep 1; printf "$challange\n"; } | sudo openconnect <VPN URL> --user=<NetID>'
 Restart=always
+
