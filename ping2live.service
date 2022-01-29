@@ -1,5 +1,5 @@
 [Unit]
-Description=Manage Openconnect VPN Connection. Follow the university policy and use at your own risk.
+Description=Keep Openconnect VPN Connection Alive. Follow the university policy and use at your own risk.
 Documentation=https://github.com/tangbao/Openconnect-VPN-RPi-Gateway
 
 [Install]
@@ -7,6 +7,6 @@ WantedBy=multi-user.target
 
 [Service]
 User=root
-ExecStart=<WorkDir>/myvpn.sh
+ExecStart=<WorkDir>/ping2live.sh
 Restart=always
 
